@@ -47,7 +47,7 @@ selectBox =  st.selectbox("Data Science : ", [  'Data Analsis', 'Web Scraping','
 st.write("You've selected : ", selectBox)
 
 st.subheader('MultiSelect Box')                         # MultiSelectBox
-multiSelBox = st.multiselect("Data Science : ", [  'Data Analsis', 'Web Scraping','Machine Learning',
+multiSelBox = st.multiselect("Data Science : ", [  'Data Analysis', 'Web Scraping','Machine Learning',
                                                     'Deep Learning','Natural Language Processing',
                                                     'Computer Vision','Image Processing'])
 st.write("You've selected : ", len(multiSelBox) , 'courses')
@@ -64,11 +64,11 @@ st.subheader("Text Input")                              # Text-Input
 username = st.text_input('Username : ')
 password = st.text_input('Password : ', type = 'password')
 
-# st.subheader("Text Area")                              # Text-Area
-# st.text_area('Write something interesting about yourself')
+st.subheader("Text Area")                              # Text-Area
+st.text_area('Write something interesting about yourself')
 
-# st.subheader("Input Number")                           # Input-Number
-# st.number_input('Select your age',18,110)
+st.subheader("Input Number")                           # Input-Number
+st.number_input('Select your age',18,110)
 
 st.subheader("Input Date")                              # Input-Date
 st.date_input('Date')
